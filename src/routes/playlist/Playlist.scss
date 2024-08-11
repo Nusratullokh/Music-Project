@@ -1,20 +1,20 @@
-.playlist__body {
+.playlist {
     background: #121212;
 }
 
 .main-playlistPg-flex {
     display: flex;
 
-    .playlist-wrapper-data {
+    .playlist__data {
         background: linear-gradient(#DEF628, #121212);
     }
 }
 
-.main-playlist-wrapper {
+.playlist__wrapper {
     width: 100%;
 }
 
-.playlist-wrapper-data {
+.playlist__data {
     padding: 0px 40px;
     padding-top: 30px;
     width: 100%;
@@ -33,7 +33,7 @@
     }
 }
 
-.playlist-wrapper-data-text {
+.playlist__data-text {
     text-transform: capitalize;
     color: #fff;
 
@@ -110,20 +110,18 @@
     }
 }
 
-.tracks-section {
+.tracks {
     background: #121212;
     padding: 0px 60px;
     color: #fff;
-    // padding-top: 22px;
 }
 
 .track__single {
     display: flex;
-    // justify-content: space-between;
     padding: 10px 0px;
     align-items: center;
 
-    .track__main_text {
+    .track__main-text {
         display: flex;
         flex-direction: column;
         gap: 3px;
@@ -178,10 +176,9 @@
     width: 42px;
 }
 
-
-
-
-// Playing Animation ///////////
+.play__button{
+    font-size: 25px;
+}
 
 
 

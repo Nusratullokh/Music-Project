@@ -1,15 +1,15 @@
-.playlistMain-wrapper {
+.playlist__wrapper {
     background: #121212;
     padding: 0px 20px;
     padding-top: 50px;
 }
 
-.wrapper-playlist-flex {
+.playlist__content{
     display: flex;
     gap: 31px;
 }
 
-.main-playlist {
+.playlist__main {
     display: flex;
     flex-direction: column;
 
@@ -19,14 +19,14 @@
     }
 }
 
-.playlist-title {
+.playlist__title {
     color: #fff;
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 30px;
 }
 
-.playlist-item {
+.playlist__item {
     width: 224px;
     height: 324px;
     background: #ffffff0b;
@@ -48,7 +48,6 @@
 
     p {
         color: #B3B3B3;
-        // font-size: 18px;
         font-weight: 400;
     }
 }

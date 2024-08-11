@@ -4,7 +4,6 @@ import Home from './routes/home/Home';
 import Playlist from './routes/playlist/Playlist';
 import LikedSongs from './routes/likedsongs/LikedSongs';
 import { useState,useEffect } from 'react';
-import Player from './components/player/Player';
 
 function App() {
   const [data, setData] = useState([])
@@ -31,7 +30,6 @@ function App() {
 
   return (
     <>
-    <Player/>
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/mixes/:id' element={<Playlist/>} />

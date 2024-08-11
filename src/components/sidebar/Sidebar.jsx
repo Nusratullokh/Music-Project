@@ -1,10 +1,10 @@
 import React from 'react'
 import "./Sidebar.scss"
-import HomeIcon from "../../img/home-icon.svg"
-import SearchIcon from "../../img/search.svg"
-import LikedSongs from "../../img/LikedSongs.svg"
-import LibraryIcon from "../../img/library.svg"
-import CreatePlaylist from "../../img/createPlaylist.svg"
+import HomeIcon from "../../assets/home-icon.svg"
+import SearchIcon from "../../assets/search.svg"
+import LikedSongs from "../../assets/LikedSongs.svg"
+import LibraryIcon from "../../assets/library.svg"
+import CreatePlaylist from "../../assets/createPlaylist.svg"
 import Container from '../../utils/Utils'
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
@@ -26,9 +26,9 @@ const Sidebar = () => {
 
   // console.log(sidebarData);
   return (
-    <div className='sidebar-wrapper'>
+    <div className='sidebar__wrapper'>
       <Container>
-        <ul className='major'>
+        <ul className='sidebar__title'>
           <Link to={"/"} className='li'> <img src={HomeIcon} alt="" /> Home</Link>
           <li className='li'> <img src={SearchIcon} alt="" /> Search</li>
           <li className='li'> <img src={LibraryIcon} alt="" /> Your Library</li>
@@ -36,7 +36,7 @@ const Sidebar = () => {
           <Link to={"/liked-songs"} className='li'> <img src={LikedSongs} alt="" /> Liked Songs</Link>
         </ul>
 
-        <ul className='minor'>
+        <ul className='sidebar__text'>
           {
             sidebarData?.playlists?.items.map(links => 
               <Link key={links.id} to={`/mixes/${links.id}`}>{links.name}</Link>

@@ -1,5 +1,5 @@
 import React from 'react'
-import "./RecentlyPlayed.scss"
+import "../JumpBackIn/JumpBackIn.scss"
 import Container from '../../utils/Utils'
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
@@ -22,13 +22,13 @@ const RecentlyPlayed = () => {
   console.log(playlistMain);
 
   return (
-    <div className='playlistMain-wrapper'>
+    <div className='playlist__wrapper'>
       <Container>
-        <h3 className='playlist-title'>Recently Played</h3>
-        <div className="wrapper-playlist-flex">
+        <h3 className='playlist__title'>Recently Played</h3>
+        <div className="playlist__content">
           {
             playlistMain?.playlists?.items.map(links =>
-              <Link className='main-playlist playlist-item' key={links.id} to={`/mixes/${links.id}`}>
+              <Link className='playlist__main playlist__item' key={links.id} to={`/mixes/${links.id}`}>
                 <img src={links.images[0].url} alt="" />
                 <b className=''>{links.name}</b>
                 <p>{links.description}</p>
@@ -42,3 +42,6 @@ const RecentlyPlayed = () => {
 }
 
 export default RecentlyPlayed
+
+
+

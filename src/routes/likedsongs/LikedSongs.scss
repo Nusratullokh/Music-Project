@@ -1,8 +1,8 @@
-.main-flex-liked-songs {
+.likedSongs {
     display: flex;
 }
 
-.liked-main-wrapper {
+.liked__wrapper {
     // padding: 0px 40px;
     padding-top: 100px;
     width: 100%;
@@ -10,7 +10,7 @@
 
 }
 
-.header-likedsongs {
+.liked__header {
     display: flex;
     padding: 0px 40px;
     padding-bottom: 30px;
@@ -24,7 +24,7 @@
     }
 }
 
-.text-wrapper {
+.liked__text {
     text-transform: capitalize;
     color: #fff;
 
@@ -41,11 +41,9 @@
     }
 }
 
-.body-likedsongs {
-    // background: #121212;
+.liked__funksion {
     height: 100vh;
     background: linear-gradient(180deg, #2b254a 5.09%, #121212 43.28%);
-    // backdrop-filter: blur(80000px);
     width: 100%;
 }
 
@@ -57,35 +55,6 @@
     justify-content: space-between;
 }
 
-// .play {
-//     display: flex;
-//     align-items: center;
-//     gap: 20px;
-
-//     img {
-//         opacity: 0.8;
-
-//         &:first-child {
-//             margin-right: 10px;
-//         }
-
-//         &:hover {
-//             opacity: 1;
-//             transform: scale(1.10000);
-//         }
-//     }
-
-//     svg {
-//         opacity: 0.8;
-//         font-size: 50px;
-//         color: #fff;
-
-//         &:hover {
-//             opacity: 1;
-//             transform: scale(1.10000);
-//         }
-//     }
-// }
 
 
 .playlist__actions {
@@ -108,26 +77,6 @@
         &:nth-child(4) {
           color: #fff;
           margin-left: 36px;
-        }
-      }
-    }
-    .playlist__actions__right {
-      display: flex;
-      gap: 35px;
-      align-items: center;
-      p {
-        &:first-child {
-          font-size: 23px;
-          color: #fff;
-        }
-        &:last-child {
-          color: #fff;
-          font-size: 18px;
-          font-weight: 450;
-          letter-spacing: -0.18px;
-          display: flex;
-          align-items: center;
-          gap: 14px;
         }
       }
     }

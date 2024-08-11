@@ -13,9 +13,9 @@ import SidebarFriends from '../../components/SidebarFriends/SidebarFriends'
 const Home = () => {
     return (
         <div className='home-wrapper'>
-            <div className="main-wrapper">
+            <div className="home__wrapper">
                 <Sidebar />
-                <div className="main__content">
+                <div className="home__content">
                     <Header />
                     <YourTopMixes />
                     <MadeForYou />
